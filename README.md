@@ -1,8 +1,9 @@
 # HomeLedger — Household Budget Planner
 
+[![make.fun · best-household-budget-site-20261126-1457](https://make.fun/badge/best-household-budget-site-20261126-1457.svg)](https://make.fun/bounty/best-household-budget-site-20261126-1457?utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457)
+[![rank](https://make.fun/badge/best-household-budget-site-20261126-1457/intan151/makefun-household-budget-site-01/rank.svg)](https://make.fun/bounty/best-household-budget-site-20261126-1457/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457)
+[![reward](https://make.fun/badge/best-household-budget-site-20261126-1457/intan151/makefun-household-budget-site-01/reward.svg)](https://make.fun/bounty/best-household-budget-site-20261126-1457?utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![make.fun entry](https://img.shields.io/badge/make.fun-best%20household%20budget%20site-blue)](https://make.fun/c/best-household-budget-site-20261126-1457)
-[![Static site](https://img.shields.io/badge/site-static%20HTML%2FCSS%2FJS-orange)](app/index.html)
 
 HomeLedger is a household budget planner that runs entirely in your browser — no accounts, no tracking, no network requests. Plan the month, track every expense, grow savings goals and learn the 50/30/20 rule, all from one small static site.
 
