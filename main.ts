@@ -38,8 +38,9 @@ if (existsSync(join(here, "screenshots"))) {
 // at most 993 files and directories and 16 MiB in all; the dossier text at
 // most 160 KiB. Anything past those limits fails the gate, so buildDossier
 // refuses it here first, with its own words.
+const dossierPath = join(out, "dossier.json");
 writeFileSync(
-  join(out, "dossier.json"),
+  dossierPath,
   buildDossier(out, {
     text_max_bytes: 163840,
     screenshots: { max: 4, max_bytes: 262144 },
@@ -47,3 +48,13 @@ writeFileSync(
     app_max_bytes: 16777216,
   }),
 );
+
+// Confirm the hand-in landed: the dossier must exist and hold bytes, and its
+// size is the one number worth reporting. This only reads the file back and
+// writes to the console — the bytes in /output are untouched.
+const dossierBytes = statSync(dossierPath).size;
+if (dossierBytes === 0) {
+  console.error("HomeLedger: dossier.json was written empty — refusing to hand in.");
+  process.exit(1);
+}
+console.log(`HomeLedger: handed in app/ + screenshots/ with dossier.json (${dossierBytes} bytes).`);
