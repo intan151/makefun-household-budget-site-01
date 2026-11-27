@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeLedger — Household Budget Planner</title>
+<meta name="description" content="HomeLedger is a household budget planner: plan the month, track every expense, grow savings goals and learn the 50/30/20 rule. All offline, all yours.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30"><path d="M16 3 3 15h3.4v13h7.2v-8.4h4.8V28h7.2V15H29L16 3z" fill="#f4ead8"/><circle cx="16" cy="13.4" r="3.2" fill="#1d5c46"/></svg>
+      </span>
+      <span class="brand-name">HomeLedger</span>
+      <span class="brand-tag">household budget planner</span>
+    </a>
+    <nav class="mainnav" aria-label="Sections">
+      <a href="#/" data-route="">Dashboard</a>
+      <a href="#/budget" data-route="budget">Budget</a>
+      <a href="#/expenses" data-route="expenses">Expenses</a>
+      <a href="#/goals" data-route="goals">Goals</a>
+      <a href="#/calculator" data-route="calculator">Calculator</a>
+      <a href="#/guide" data-route="guide">Guide</a>
+    </nav>
+  </div>
+</header>
+<main id="app" class="wrap" aria-live="polite"></main>
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>HomeLedger</strong> — a household budget planner that runs entirely in your browser. Your figures never leave this device; they are stored only in your browser's local storage.</p>
+    <p class="fineprint">Sample household figures are included so every page works out of the box — edit them on the Budget page or add your own expenses and they update everywhere. Built as a static site: no accounts, no tracking, no network requests.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
